@@ -55,12 +55,14 @@ public class Main {
 
     static void reverseNumber(){
         System.out.print("Enter the number: ");
-        String num1 = sc.next();
-        String temp = "";
-        for(int i=num1.length()-1; i>=0; i--) {
-            temp+= num1.charAt(i);
+        int num1 = sc.nextInt();
+        int reverse = 0;
+        while (num1!=0){
+            int temp = num1%10;
+            reverse = reverse*10+temp;
+            num1 = num1/10;
         }
-        System.out.println(temp+" is the Reverse");
+        System.out.println(reverse+" is the Reverse");
     }
 
     public static void main(String[] args) {
