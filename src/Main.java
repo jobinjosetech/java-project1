@@ -53,6 +53,16 @@ public class Main {
         }
     }
 
+    static void reverseNumber(){
+        System.out.print("Enter the number: ");
+        String num1 = sc.next();
+        String temp = "";
+        for(int i=num1.length()-1; i>=0; i--) {
+            temp+= num1.charAt(i);
+        }
+        System.out.println(temp+" is the Reverse");
+    }
+
     public static void main(String[] args) {
         while(true) {
             System.out.println("------------------ Menu ------------------");
@@ -75,6 +85,8 @@ public class Main {
                     primeNumber();
                 case 4:
                     evenNumber();
+                case 5:
+                    reverseNumber();
             }
         }
     }
