@@ -26,6 +26,22 @@ public class Main {
         System.out.println(largestNumber+" is the smallest Number");
     }
 
+    static void primeNumber() {
+        System.out.print("Enter the number: ");
+        int num1 = sc.nextInt();
+        boolean temp = false;
+        for(int i=2;i<num1;i++) {
+            if(num1 % i == 0) {
+                temp = true;
+            }
+        }
+        if(temp) {
+            System.out.println(num1+" is not a prime number");
+        }else{
+            System.out.println(num1+" is a prime number");
+        }
+    }
+
     public static void main(String[] args) {
         while(true) {
             System.out.println("------------------ Menu ------------------");
@@ -44,6 +60,8 @@ public class Main {
                     largestNumber();
                 case 2:
                     smallestNumber();
+                case 3:
+                    primeNumber();
             }
         }
     }
