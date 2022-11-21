@@ -79,14 +79,24 @@ public class Main {
             switch (choice) {
                 case 1:
                     largestNumber();
+                    break
                 case 2:
                     smallestNumber();
+                    break;
                 case 3:
                     primeNumber();
+                    break;
                 case 4:
                     evenNumber();
+                    break;
                 case 5:
                     reverseNumber();
+                    break;
+                case 6:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid Choice");
             }
         }
     }
