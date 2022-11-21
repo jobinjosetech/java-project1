@@ -14,6 +14,18 @@ public class Main {
         System.out.println(largestNumber+" is the Largest Number");
     }
 
+    static void smallestNumber() {
+        System.out.print("Enter first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = sc.nextInt();
+        System.out.print("Enter third number: ");
+        int num3 = sc.nextInt();
+
+        int largestNumber = (num1 < num2) ? (num1 < num3 ? num1 : num3) : (num2 < num3 ? num2 : num3);
+        System.out.println(largestNumber+" is the smallest Number");
+    }
+
     public static void main(String[] args) {
         while(true) {
             System.out.println("------------------ Menu ------------------");
@@ -30,6 +42,8 @@ public class Main {
             switch (choice) {
                 case 1:
                     largestNumber();
+                case 2:
+                    smallestNumber();
             }
         }
     }
