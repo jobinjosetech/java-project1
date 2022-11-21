@@ -42,6 +42,17 @@ public class Main {
         }
     }
 
+    static void evenNumber(){
+        System.out.print("Enter the number: ");
+        int num1 = sc.nextInt();
+
+        if(num1%2==0){
+            System.out.println(num1+" is an even number");
+        }else {
+            System.out.println(num1+" is not an even number");
+        }
+    }
+
     public static void main(String[] args) {
         while(true) {
             System.out.println("------------------ Menu ------------------");
@@ -62,6 +73,8 @@ public class Main {
                     smallestNumber();
                 case 3:
                     primeNumber();
+                case 4:
+                    evenNumber();
             }
         }
     }
